@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Actividad Aulica 16</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/script.js"></script>
+  </head>
+  <body>
+    <!-- 2.Nueva manera de programar JavaScript con jQuery -->
+    <section>
+      <h3>Párrafos</h3>
+      <p id="parrafo1">Párrafo N°1. Haga click acá.</p>
+      <p>Párrafo N°2.</p>
+    </section>
+    <!-- 3. Selección de un elemento del documento mediante el id. -->
+    <section>
+      <h3>Tablas que cambian su fondo al presionar.</h3>
+      <table id="tabla1">
+        <tr>
+          <td>Contenido 1</td>
+          <td>Contenido 2</td>
+        </tr>
+        <tr>
+          <td>Contenido 1</td>
+          <td>Contenido 2</td>
+        </tr>
+      </table>
+    </section>
+    <!-- 4. Selección de elementos por el tipo de elementos -->
+    <section>
+      <h3>Lista sin ordenar:</h3>
+      <ul id="lista-sin-ordenar1">
+        <li>Primer Elemento</li>
+        <li>Segundo Elemento</li>
+        <li>Tercer Elemento</li>
+        <li>Cuarto Elemento</li>
+      </ul>
+    </section>
+    <!-- 5. Selección de elementos utilizando los selectores CSS. -->
+    <section>
+      <h3>Tablas</h3>
+      <table id="tabla2">
+        <tr>
+          <td>Contenido 1</td>
+          <td>Contenido 2</td>
+          <td>Contenido 3</td>
+        </tr>
+        <tr>
+          <td>Contenido 1</td>
+          <td>Contenido 2</td>
+          <td>Contenido 3</td>
+        </tr>
+        <tr>
+          <td>Contenido 1</td>
+          <td>Contenido 2</td>
+          <td>Contenido 3</td>
+        </tr>
+      </table>
+      <table id="tabla3">
+        <tr>
+          <td>Contenido 1</td>
+          <td>Contenido 2</td>
+          <td>Contenido 3</td>
+        </tr>
+        <tr>
+          <td>Contenido 1</td>
+          <td>Contenido 2</td>
+          <td>Contenido 3</td>
+        </tr>
+        <tr>
+          <td>Contenido 1</td>
+          <td>Contenido 2</td>
+          <td>Contenido 3</td>
+        </tr>
+      </table>
+    </section>
+    <!-- 6. Selección de elementos utilizando las clases CSS definidas -->
+    <section>
+      <h3>Noticias</h3>
+      <div class="noticia">
+        <h5>Noticia 1</h5>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore
+          molestias dolores quae delectus placeat, earum numquam id eligendi,
+          beatae commodi quaerat accusamus dolor iure? Vel mollitia maiores esse
+          non cumque.
+        </p>
+      </div>
+      <div class="noticia">
+        <h5>Noticia 2</h5>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore
+          molestias dolores quae delectus placeat, earum numquam id eligendi,
+          beatae commodi quaerat accusamus dolor iure? Vel mollitia maiores esse
+          non cumque.
+        </p>
+      </div>
+      <div class="noticia">
+        <h5>Noticia 2</h5>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore
+          molestias dolores quae delectus placeat, earum numquam id eligendi,
+          beatae commodi quaerat accusamus dolor iure? Vel mollitia maiores esse
+          non cumque.
+        </p>
+      </div>
+      <h4>Cambiar tamaño de la fuente de la descripción</h4>
+      <button id="botonLetraPequena">Letra pequeña</button>
+      <button id="botonLetraMediana">Letra mediana</button>
+      <button id="botonLetraGrande">Letra grande</button>
+    </section>
+    <!-- 7. Método text(), text(valor) -->
+    <section>
+      <table id="tabla4">
+        <tr>
+          <td>Contenido 1</td>
+          <td>Contenido 2</td>
+          <td>Contenido 3</td>
+        </tr>
+        <tr>
+          <td>Contenido 1</td>
+          <td>Contenido 2</td>
+          <td>Contenido 3</td>
+        </tr>
+        <tr>
+          <td>Contenido 1</td>
+          <td>Contenido 2</td>
+          <td>Contenido 3</td>
+        </tr>
+      </table>
+
+      <table id="tabla5">
+        <tr>
+          <td>Contenido 1</td>
+          <td>Contenido 2</td>
+          <td>Contenido 3</td>
+        </tr>
+        <tr>
+          <td>Contenido 1</td>
+          <td>Contenido 2</td>
+          <td>Contenido 3</td>
+        </tr>
+        <tr>
+          <td>Contenido 1</td>
+          <td>Contenido 2</td>
+          <td>Contenido 3</td>
+        </tr>
+      </table>
+
+      <button id="botonTabla4">Cambiar el contenido de la primer tablas</button>
+    </section>
+    <!-- 8. Métodos attr(nombre de propiedad), attr(nombre de propiedad,valor) y removeAttr(nombre de propiedad) -->
+    <section>
+      <h3>Hipervínculo (links)</h3>
+      <a id="linkDinamica" href=""></a>
+      <p>Presionar un botón para cambiar el enlace</p>
+      <p>
+        <button id="botonGoogle">Google</button>
+        <button id="botonMicrosoft">Microsoft</button>
+        <button id="botonMozilla">Mozilla</button>
+      </p>
+    </section>
+    <!-- 9. Métodos addClass y removeClass -->
+    <section>
+      <h3>Estilo tablas</h3>
+      <table class="tabla-con-estilo">
+        <thead>
+          <tr>
+            <th>Encabezado 1</th>
+            <th>Encabezado 2</th>
+            <th>Encabezado 3</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Campo</td>
+            <td>Campo</td>
+            <td>Campo</td>
+          </tr>
+          <tr>
+            <td>Campo</td>
+            <td>Campo</td>
+            <td>Campo</td>
+          </tr>
+        </tbody>
+      </table>
+      <h5>Modificar el estilo</h5>
+      <button id="agregarEstiloTabla">Agregar el estilo</button>
+      <button id="quitarEstiloTabla">Quitar el estilo</button>
+    </section>
+    <!-- 10. Método html() y html(valor) -->
+    <section>
+      <h3>Mostrar Contenido de la página</h3>
+      <button id="mostrarHead">Mostrar la cabecera de la página</button>
+      <button id="mostrarBody">Mostrar el cuerpo de la página</button>
+    </section>
+  </body>
+  <!-- 11. Administración de eventos con jQuery -->
+  <section>
+    <h3>Evento</h3>
+    <p>
+      Lorem <strong>ipsum</strong> dolor sit amet,
+      <strong>adipisicing elit</strong>. Aliquam ipsam, magni ad blanditiis
+      dolorum beatae, <strong>quod magnam ducimus pariatur</strong> minus
+      voluptas ab. Molestias,
+      <strong>recusandae nam explicabo</strong> doloribus esse atque modi?
+    </p>
+  </section>
+  <!-- 12. Eventos mouseover y mouseout -->
+  <section>
+    <h3>Tabla</h3>
+    <table id="tabla6">
+      <tr>
+        <td>Contenido 1</td>
+        <td>Contenido 2</td>
+      </tr>
+      <tr>
+        <td>Contenido 1</td>
+        <td>Contenido 2</td>
+      </tr>
+    </table>
+  </section>
+  <!-- 13. Evento hover -->
+  <section>
+    <h3>Tabla</h3>
+    <table id="tabla7">
+      <tr>
+        <td>Contenido 1</td>
+        <td>Contenido 2</td>
+      </tr>
+      <tr>
+        <td>Contenido 1</td>
+        <td>Contenido 2</td>
+      </tr>
+    </table>
+  </section>
+  <!-- 14. Evento mousemove -->
+  <section>
+    <h3>Evento del Mouse</h3>
+    <div id="divMouseCoordenada"></div>
+    <p id="displayCoordenadas">El mouse no se encuentra dentro del div</p>
+  </section>
+  <!-- 15. Eventos mousedown y mouseup -->
+  <section>
+    <h3>Botones</h3>
+    <button id="botonFondo1">Cambiar fondo</button>
+    <button id="botonFondo2">Cambiar fondo</button>
+  </section>
+  <!-- 16. Evento dblclick -->
+  <section>
+    <h3>Doble click</h3>
+    <div id="divDobleclick"></div>
+  </section>
+  <!-- 17. Evento focus -->
+  <section>
+    <h3>Focus</h3>
+    <input type="text" id="inputFocus1" value="Input1" />
+    <input type="text" id="inputFocus2" value="Input2" />
+  </section>
+  <!-- 18.Evento blur. -->
+  <section>
+    <h3>Focus Blur</h3>
+    <form id="formularioBlur">
+      <input type="text" />
+    </form>
+  </section>
+  <!-- 20. Efectos con los métodos show y hide -->
+  <!-- TERMINAR -->
+  <section></section>
+</html>

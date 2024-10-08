@@ -1,0 +1,29 @@
+table,
+td {
+  border: 1px solid black;
+}
+
+table {
+  margin: 10px;
+}
+
+.encabezado-tabla {
+  background-color: #4d4d4d;
+  color: white;
+}
+
+.cuerpo-tabla {
+  font-style: italic;
+}
+
+#divMouseCoordenada {
+  width: 200px;
+  height: 200px;
+  border: 1px solid black;
+}
+
+#divDobleclick {
+  width: 800px;
+  height: 70px;
+  border: 1px solid black;
+}
