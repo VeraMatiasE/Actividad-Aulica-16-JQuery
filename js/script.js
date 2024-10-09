@@ -288,7 +288,6 @@ function mostrarParrafosDiv2() {
 
 // 22.
 function bajarOpacidadDiv() {
-  console.log("Test");
   let parrafo = $("#showHideDiv5");
   parrafo.fadeTo("slow", 0.2, mostrarParrafosDiv3);
 }
