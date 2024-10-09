@@ -3,6 +3,10 @@ td {
   border: 1px solid black;
 }
 
+section {
+  margin: 5px;
+}
+
 table {
   margin: 10px;
 }
@@ -19,11 +23,15 @@ table {
 #divMouseCoordenada {
   width: 200px;
   height: 200px;
-  border: 1px solid black;
 }
 
 #divDobleclick {
   width: 800px;
   height: 70px;
   border: 1px solid black;
+}
+
+.div-recuadro {
+  border: 1px solid black;
+  min-height: 10px;
 }
