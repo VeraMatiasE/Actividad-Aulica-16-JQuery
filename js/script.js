@@ -94,7 +94,25 @@ function inicializarEventos() {
 
   // 18.
   let textoBlur = $('#formularioBlur input[type="text"');
-  textoBlur.focusout(comprobarText);
+  textoBlur.blur(comprobarText);
+
+  // 20.
+  $("#showHideDiv2").hide();
+  let divShowHide1 = $("#showHideDiv1");
+  divShowHide1.click(ocultarParrafosDiv);
+
+  // 21.
+  $("#showHideDiv4").hide();
+  let divShowHide3 = $("#showHideDiv3");
+  divShowHide3.click(ocultarParrafosDiv2);
+
+  // 22.
+  $("#showHideDiv6").hide();
+  let divShowHide5 = $("#showHideDiv5");
+  divShowHide5.click(bajarOpacidadDiv);
+
+  // 24.
+  $("#resaltarSubdominioAR").click(resaltarSubdominiosAR);
 }
 
 // 2.
@@ -243,5 +261,53 @@ function comprobarText() {
   let value = e.val();
   if (value.length == 0) {
     alert("El campo de texto no debe de estar vacío");
+  }
+}
+
+// 20.
+function ocultarParrafosDiv() {
+  let parrafos = $("#showHideDiv1");
+  parrafos.hide("slow", mostrarParrafosDiv);
+}
+
+function mostrarParrafosDiv() {
+  let parrafos = $("#showHideDiv2");
+  parrafos.show("slow");
+}
+
+// 21.
+function ocultarParrafosDiv2() {
+  let parrafos = $("#showHideDiv3");
+  parrafos.fadeOut("slow", mostrarParrafosDiv2);
+}
+
+function mostrarParrafosDiv2() {
+  let parrafos = $("#showHideDiv4");
+  parrafos.fadeIn("slow");
+}
+
+// 22.
+function bajarOpacidadDiv() {
+  console.log("Test");
+  let parrafo = $("#showHideDiv5");
+  parrafo.fadeTo("slow", 0.2, mostrarParrafosDiv3);
+}
+
+function mostrarParrafosDiv3() {
+  let parrafos = $("#showHideDiv6");
+  parrafos.fadeIn("slow");
+}
+
+// 24.
+function resaltarSubdominiosAR() {
+  let link = $("#listaDominios a");
+  link.each(resaltarElemento);
+}
+
+function resaltarElemento() {
+  let e = $(this);
+  if (e.attr("href").indexOf(".ar") != -1) {
+    e.css("background-color", "blue");
+    e.css("color", "white");
   }
 }
